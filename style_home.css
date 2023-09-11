@@ -148,7 +148,7 @@
 
 @media(max-width:450px){
     
-    .section_home{
+    .section-home{
         display: flex;
         flex-direction: column-reverse;
     }
