@@ -1,0 +1,116 @@
+.section-education{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8vw;
+}
+
+.section-education__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    color: white;
+    gap: 2vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-education-title-header{
+    display: flex;
+    align-self: start;
+    font-weight: 700;
+    font-size:clamp(0.1rem, 2.1vw, 2.1vw);
+    color: #F5B63F;
+    padding-bottom: 2.5vw;
+}
+
+
+.section-education-title::before{
+    content: "|";
+    position: relative;
+    bottom: 0.2vw;
+}
+
+.section-education__content-column{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    width: 22.6vw;
+}
+
+.section-education__content-column-title{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #2A2A2A;
+    color: #F5B63F;
+    padding: 0.5vw 0.5vw;
+    margin-bottom: 2vw;
+    font-size: clamp(0.1rem, 1.1vw, 1.1vw);
+}
+
+.section-education__content-column-item{
+    font-size:clamp(0.1rem, 1.1vw, 1.1vw);
+    font-weight: 300;
+}
+
+.section-education__content-column-item-more{
+    font-size:clamp(0.1rem, 1.1vw, 1.1vw);
+    font-weight: 300;
+    display: none;
+}
+
+.section-education__content-column-date{
+    font-size:clamp(0.1rem, 1.1vw, 1.1vw);
+    font-weight: 500;
+}
+
+.section-education__content-column-course{
+    font-family: 'Roboto', sans-serif;
+    font-size:clamp(0.1rem, 1.4vw, 1.4vw);
+    font-weight: 700;
+}
+
+
+.section-education__content{
+    display: flex;
+    flex-direction:line;
+    gap:6vw;
+}
+
+.section-education-button{
+    display: flex;
+    align-self: end;
+    justify-content: center;
+    color: white;
+    background-color: #2B2A2A;
+    border-color: transparent;
+    border-radius: 0.6vw;
+    width: 8.2vw;
+    padding: 0.35vw 1.3vw;
+    font-size: clamp(0.1rem, 1vw, 1vw);
+    font-weight: 300;
+    cursor: pointer;
+    transition:0.5s;
+}
+
+.section-education-button:hover{
+    background-color: #F5B63F;
+}
+
+@media(max-width: 450px){
+    .section-education__content{
+        flex-direction: column;
+    }
+
+    .section-education-title-header{
+        align-self: center;
+    }
+
+    .section-education-button{
+        align-self:center;
+        margin-top: 4vw;
+    }
+}

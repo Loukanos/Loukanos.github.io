@@ -1,0 +1,114 @@
+.section-about{
+    display: flex;
+    width: 100%;
+    padding-top: 3vw;
+    padding-bottom: 8vw;
+
+}
+
+.section-about__container{
+    display: flex;
+    color: #FFFFFF;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10vw;
+    gap:1vw;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 6vw;
+}
+
+.section-about__container-title{
+    font-weight: 700;
+    font-size:clamp(0.01rem, 3.2vw, 3.2vw);
+    color:#F5B63F;
+}
+
+.section-about__container-title::before{
+    content: "| ";
+    position: relative;
+    bottom: 0.2vw;
+}
+
+.section-about__list{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding-top: 3vw;
+}
+
+.section-about__container-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-about__container-text1{
+    color:#C4C4C4;
+    font-size:clamp(0.1rem, 1.25vw, 1.25vw);
+    font-weight: 300;
+}
+
+.section-about__container-text2{
+    font-weight: 400;
+    font-size:clamp(0.1rem, 1.6vw, 1.6vw);
+}
+
+.section-about__container-button{
+    background-color: #2B2A2A;
+    border-color: transparent;
+    border-radius: 0.5vw;
+    color: white;
+    width: 8.2vw;
+    padding: 0.4vw 1vw;
+    font-size: clamp(0.1rem, 1vw, 1vw);
+    font-weight: 300;
+    margin-top: 4vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.section-about__container-button:hover{
+    background-color: #F5B63F;
+}
+
+.section-about__image-div{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: end;
+    align-items: center;
+    padding-top: 15vw;
+
+}
+
+.section-about__image{
+    /* height: 64vh; */
+    height: 78%;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+@media(max-width:450px){
+
+    .section-about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-about__container{
+        padding-left: 0;
+    }
+
+    .section-about__container-button{
+        justify-self: center;
+        align-self: center;
+    }
+
+    .section-about__image-div{
+        padding-top: 5vw;
+    }
+}

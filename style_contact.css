@@ -1,0 +1,208 @@
+.section-contact{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 6vw;
+}
+
+.section-contact__container{
+    display: flex;
+    flex-direction: line;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.section-contact__information{
+    display: flex;
+    flex-direction: column;
+    gap:1.5vw;
+
+}
+
+.section-contact__information-list{
+    display: flex;
+    flex-direction: column;
+    gap:1.6vw;
+    padding-bottom: 6.5vw;
+}
+
+.section-contact__information-title{
+    display: flex;
+    /* align-self: start; */
+    font-weight: 700;
+    font-size:clamp(0.1rem, 3vw, 3vw);
+    color: #F5B63F;
+    padding-bottom:3.5vw;
+
+}
+
+.section-contact__information-title::before{
+    content: "|";
+    position: relative;
+    bottom: 0.2vw;
+}
+
+.section-contact__information-content{
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+}
+
+.section-contact__information-content-icon{
+    display: flex;
+    border-radius: 0.4vw;
+    border-color: transparent;
+    background-color:#F5B63F;
+    padding: 0.4vw 0.4vw; 
+    align-items: center;
+    font-size: clamp(0.1rem, 1.6vw, 1.6vw);
+    cursor: pointer;
+}
+
+.section-contact__information-content-title{
+    font-weight: 300;
+    font-size: clamp(0.1rem, 1.2vw, 1.2vw);
+}
+
+.section-contact__information-content-info{
+    font-weight: 700;
+    font-size: clamp(0.1rem, 1.2vw, 1.2vw);
+}
+
+.section-contact__information-media{
+    display: flex;
+    flex-direction:row;
+    gap:1.5vw;
+    padding-top: 2.8vw;
+}
+
+
+.section-contact__information-media-standard{
+    display: flex;
+    border-radius:100%;
+    border-color: transparent;
+    background-color:#2B2A2A;
+    padding: 0.5vw 0.6vw; 
+    align-items: center;
+    font-size: clamp(0.1rem, 1.4vw, 1.4vw);
+    transition: 0.5s ease;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.section-contact__information-media-standard:hover{
+    background-color: #F5B63F;
+    color: #111111;
+}
+
+.section-contact__information-media-unique{
+    display: flex;
+    border-radius:100%;
+    border-color: transparent;
+    background-color:#2B2A2A;
+    padding: 0.5vw 0.4vw; 
+    align-items: center;
+    font-size: clamp(0.1rem, 1.4vw, 1.4vw);
+    transition: 0.5s ease;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.section-contact__information-media-unique:hover{
+    background-color: #F5B63F;
+    color: #111111;
+}
+
+.section-contact__form-div{
+    display: flex;
+    padding-top: 7vw;
+
+}
+
+.section-contact__form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    gap:1vw;
+    width: 35vw;
+    
+}
+
+.section-contact__form-element{
+    background-color: #2B2A2A;
+    color: #CDCDCD;
+    border-radius: 0.4vw;
+    border:solid 0.1vw #CDCDCD;
+    padding: 0.7vw 1vw;
+    font-size:clamp(0.1rem, 0.9vw, 0.9vw);
+    
+}
+
+.section-contact__form-element-big{
+    background-color: #2B2A2A;
+    color: #CDCDCD;
+    border-radius: 0.4vw;
+    border:solid 0.1vw #CDCDCD;
+    padding: 0.6vw 1vw;
+    resize: none;
+    font-size:clamp(0.1rem, 1vw, 1vw);
+    height: 12vw;
+}
+
+.section-contact__form-element-submit{
+    display: flex;
+    align-self: end;
+    justify-content: center;
+    color: white;
+    background-color: #2B2A2A;
+    border-color: transparent;
+    border-radius: 0.6vw;
+    width: 8.2vw;
+    padding: 0.35vw 1.3vw;
+    font-size:clamp(0.1rem, 0.9vw, 0.9vw);
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.section-contact__form-element-submit:hover{
+    background-color: #F5B63F;
+}
+
+.section-contact__form-element-submit-div{
+    display: flex;
+    justify-content: end;
+    padding-top: 5vw;
+}
+
+@media(max-width:450px){
+    .section-contact__container{
+        flex-direction: column;
+    }
+
+    .section-contact__form-element-submit-div{
+        align-self: center;
+        padding-top: 2vw;
+    }
+
+    .section-contact__information{
+        align-items: center;
+    }
+
+    .section-contact__information-media{
+        padding-top: 0vw;
+    }
+
+    .section-contact__information-list{
+        padding-bottom: 2vw;
+    }
+
+    .section-contact__form-div{
+        padding-top: 4vw;
+    }
+
+}
